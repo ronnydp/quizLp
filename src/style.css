@@ -12,26 +12,37 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 body {
   margin: 0;
   padding: 0;
   display: grid;
   place-content: center;
 }
-
-label{
+label {
   margin: 0.4rem;
 }
-
-input{
+input {
   margin: 0.4rem;
 }
-
-fieldset{
+fieldset {
   margin: 30px;
 }
-
-.header{
+.header {
   display: space-between;
+}
+.submit {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+button {
+  background-color: green;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: rgb(14, 76, 14);
+  transition: 0.1s;
 }
