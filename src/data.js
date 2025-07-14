@@ -1,13 +1,13 @@
 export const preguntas = [
   {
-    "pregunta": "¿Cuál fue el primer álbum de estudio de Linkin Park?",
-    "opciones": [
+    pregunta: "¿Cuál fue el primer álbum de estudio de Linkin Park?",
+    opciones: [
       "Minutes to Midnight",
       "Meteora",
       "Hybrid Theory",
       "Living Things"
     ],
-    "respuesta": "Hybrid Theory",
+    respuesta: "Hybrid Theory",
   },
   {
     pregunta: "¿Cómo se llamaba el vocalista principal de Linkin Park?",

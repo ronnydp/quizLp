@@ -4,20 +4,404 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/linkin-park-seeklogo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz LP</title>
+    <link rel="stylesheet" href="/src/style.css" />
+    <title>Quiz Linkin Park</title>
   </head>
   <body>
-    <div id="app">
-      <h1>Quiz LP</h1>
-      <h2 id="orden">Pregunta 1</h2>
-      <p id="pregunta"></p>
-      <div id="">
-        <div class="options" id="op1"></div>
-        <div class="options" id="op2"></div>
-        <div class="options" id="op3"></div>
-        <div class="options" id="op4"></div>
+    <div class="header">
+      <h1>Quiz Linkin Park</h1>
+      <span></span>
+    </div>
+    <div class="container">
+      <fieldset>
+        <legend>
+          <strong
+            >1. ¿Cuál fue el primer álbum de estudio de Linkin Park?</strong
+          >
+        </legend>
+        <div>
+          <input
+            type="radio"
+            name="first-album"
+            id="q1-minutes-to-midnight"
+            value="Minutes to Midnight"
+          />
+          <label for="q1-minutes-to-midnight">Minutes to Midnight</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            name="first-album"
+            id="q1-meteora"
+            value="Meteora"
+          />
+          <label for="q1-meteora">Meteora</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            name="first-album"
+            id="q1-hybrid-theory"
+            value="Hybrid Theory"
+          />
+          <label for="q1-hybrid-theory">Hybrid Theory</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            name="first-album"
+            id="q1-living-things"
+            value="Living Things"
+          />
+          <label for="q1-living-things">Living Things</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>
+          <strong
+            >2. ¿Cómo se llamaba el vocalista principal de Linkin Park?</strong
+          >
+        </legend>
+        <div>
+          <input
+            type="radio"
+            name="vocalist"
+            id="q2-dave-farrell"
+            value="Dave Farrell"
+          />
+          <label for="q2-dave-farrell">Dave Farrell</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            name="vocalist"
+            id="q2-chester-bennington"
+            value="Chester Bennington"
+          />
+          <label for="q2-chester-bennington">Chester Bennington</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            name="vocalist"
+            id="q2-mike-shinoda"
+            value="Mike Shinoda"
+          />
+          <label for="q2-mike-shinoda">Mike Shinoda</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            name="vocalist"
+            id="q2-brad-delson"
+            value="Brad Delson"
+          />
+          <label for="q2-brad-delson">Brad Delson</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>
+          <strong>3. ¿En qué año se lanzó el álbum 'Meteora'?</strong>
+        </legend>
+        <div>
+          <input type="radio" name="meteora-year" id="q3-2000" value="2000" />
+          <label for="q3-2000">2000</label>
+        </div>
+        <div>
+          <input type="radio" name="meteora-year" id="q3-2003" value="2003" />
+          <label for="q3-2003">2003</label>
+        </div>
+        <div>
+          <input type="radio" name="meteora-year" id="q3-2007" value="2007" />
+          <label for="q3-2007">2007</label>
+        </div>
+        <div>
+          <input type="radio" name="meteora-year" id="q3-2010" value="2010" />
+          <label for="q3-2010">2010</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>
+          <strong>4. ¿Cuál de estas canciones NO es de Linkin Park?</strong>
+        </legend>
+        <div>
+          <input
+            type="radio"
+            name="not-theirs"
+            id="q4-in-the-end"
+            value="In The End"
+          />
+          <label for="q4-in-the-end">In The End</label>
+        </div>
+        <div>
+          <input type="radio" name="not-theirs" id="q4-numb" value="Numb" />
+          <label for="q4-numb">Numb</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            name="not-theirs"
+            id="q4-chop-suey"
+            value="Chop Suey!"
+          />
+          <label for="q4-chop-suey">Chop Suey!</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            name="not-theirs"
+            id="q4-crawling"
+            value="Crawling"
+          />
+          <label for="q4-crawling">Crawling</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>
+          <strong>5. ¿Cuál es el nombre del DJ de Linkin Park?</strong>
+        </legend>
+        <div>
+          <input
+            type="radio"
+            name="dj-name"
+            id="q5-rob-bourdon"
+            value="Rob Bourdon"
+          />
+          <label for="q5-rob-bourdon">Rob Bourdon</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            name="dj-name"
+            id="q5-joe-hahn"
+            value="Joe Hahn"
+          />
+          <label for="q5-joe-hahn">Joe Hahn</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            name="dj-name"
+            id="q5-brad-delson"
+            value="Brad Delson"
+          />
+          <label for="q5-brad-delson">Brad Delson</label>
+        </div>
+        <div>
+          <input type="radio" name="dj-name" id="q5-phoenix" value="Phoenix" />
+          <label for="q5-phoenix">Phoenix</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>
+          <strong
+            >6. ¿Qué estilo musical mezcla Linkin Park en su música?</strong
+          >
+        </legend>
+        <div>
+          <input
+            type="radio"
+            name="genre"
+            id="q6-reggaeton-pop"
+            value="Reggaetón y pop"
+          />
+          <label for="q6-reggaeton-pop">Reggaetón y pop</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            name="genre"
+            id="q6-hiphop-metal"
+            value="Hip hop y metal"
+          />
+          <label for="q6-hiphop-metal">Hip hop y metal</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            name="genre"
+            id="q6-jazz-blues"
+            value="Jazz y blues"
+          />
+          <label for="q6-jazz-blues">Jazz y blues</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            name="genre"
+            id="q6-electro-salsa"
+            value="Electrónica y salsa"
+          />
+          <label for="q6-electro-salsa">Electrónica y salsa</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>
+          <strong
+            >7. ¿Qué canción dice 'I tried so hard and got so far'?</strong
+          >
+        </legend>
+        <div>
+          <input type="radio" name="song-lyric" id="q7-numb" value="Numb" />
+          <label for="q7-numb">Numb</label>
+        </div>
+        <div>
+          <input type="radio" name="song-lyric" id="q7-faint" value="Faint" />
+          <label for="q7-faint">Faint</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            name="song-lyric"
+            id="q7-in-the-end"
+            value="In The End"
+          />
+          <label for="q7-in-the-end">In The End</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            name="song-lyric"
+            id="q7-breaking-habit"
+            value="Breaking the Habit"
+          />
+          <label for="q7-breaking-habit">Breaking the Habit</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>
+          <strong
+            >8. ¿Cuál fue el último álbum de estudio lanzado antes de la muerte
+            de Chester Bennington?</strong
+          >
+        </legend>
+        <div>
+          <input
+            type="radio"
+            name="last-album-w/chester"
+            id="q8-hunting-party"
+            value="The Hunting Party"
+          />
+          <label for="q8-hunting-party">The Hunting Party</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            name="last-album-w/chester"
+            id="q8-thousand-suns"
+            value="A Thousand Suns"
+          />
+          <label for="q8-thousand-suns">A Thousand Suns</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            name="last-album-w/chester"
+            id="q8-one-more-light"
+            value="One More Light"
+          />
+          <label for="q8-one-more-light">One More Light</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            name="last-album-w/chester"
+            id="q8-living-things"
+            value="Living Things"
+          />
+          <label for="q8-living-things">Living Things</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>
+          <strong
+            >9. ¿Cómo se llama el proyecto paralelo de Mike Shinoda?</strong
+          >
+        </legend>
+        <div>
+          <input
+            type="radio"
+            name="mike-project"
+            id="q9-dead-by-sunrise"
+            value="Dead by Sunrise"
+          />
+          <label for="q9-dead-by-sunrise">Dead by Sunrise</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            name="mike-project"
+            id="q9-fort-minor"
+            value="Fort Minor"
+          />
+          <label for="q9-fort-minor">Fort Minor</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            name="mike-project"
+            id="q9-grey-daze"
+            value="Grey Daze"
+          />
+          <label for="q9-grey-daze">Grey Daze</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            name="mike-project"
+            id="q9-living-things"
+            value="Living Things"
+          />
+          <label for="q9-living-things">Living Things</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>
+          <strong>10. ¿En qué ciudad se formó Linkin Park?</strong>
+        </legend>
+        <div>
+          <input type="radio" name="city-from" id="q10-ny" value="Nueva York" />
+          <label for="q10-ny">Nueva York</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            name="city-from"
+            id="q10-chicago"
+            value="Chicago"
+          />
+          <label for="q10-chicago">Chicago</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            name="city-from"
+            id="q10-la"
+            value="Los Ángeles"
+          />
+          <label for="q10-la">Los Ángeles</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            name="city-from"
+            id="q10-seattle"
+            value="Seattle"
+          />
+          <label for="q10-seattle">Seattle</label>
+        </div>
+      </fieldset>
+      <div class="submit">
+        <button>Terminar</button>
       </div>
-      <button class="button">Siguiente</button>
     </div>
     <script type="module" src="/src/main.js"></script>
   </body>
